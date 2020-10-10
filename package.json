@@ -21,8 +21,7 @@
     "eslint": "eslint --ext js,jsx,ts,tsx",
     "lint": "yarn eslint src",
     "lint:fix": "yarn eslint --fix src",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "react-scripts test"
   },
   "browserslist": {
     "production": [
@@ -39,10 +38,20 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.4.0",
     "@typescript-eslint/parser": "^4.4.0",
-    "eslint": "^7.11.0",
+    "eslint": "6.6.0",
     "eslint-config-prettier": "^6.12.0",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.21.4",
+    "jest": "24.9.0",
     "prettier": "^2.1.2"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/index.tsx",
+      "!src/react-app-env.d.ts",
+      "!src/serviceWorker.ts",
+      "!src/setupTests.ts"
+    ]
   }
 }
