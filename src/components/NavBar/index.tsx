@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import { styled } from 'stitches.config';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface NavBarProps {}
@@ -20,29 +20,29 @@ export default function NavBar(props: NavBarProps): JSX.Element {
   );
 }
 
-const Wrapper = styled.header`
-  box-shadow: 0 0.1rem black;
-  height: 4rem;
-  display: flex;
-  top: 0;
-  width: 100%;
-  background-color: #3d3d3d;
-  z-index: 2;
-`;
+const Wrapper = styled('header', {
+  boxShadow: '0 0.1rem black',
+  height: '4rem',
+  display: 'flex',
+  top: 0,
+  width: '100%',
+  backgroundColor: '#3d3d3d',
+  zindex: 2,
+});
 
-const Navigation = styled.nav`
-  display: flex;
-`;
+const Navigation = styled('nav', {
+  display: 'flex',
+});
 
-const Item = styled.a`
-  display: flex;
-  color: white;
-  padding: 0.25rem 1rem;
-  font-size: 0.975rem;
-  text-decoration: none;
-  font-weight: 500;
-  align-items: center;
-  &:hover {
-    opacity: 0.8;
+const Item = styled('a', {
+  display: 'flex',
+  color: 'white',
+  padding: '0.25rem 1rem',
+  fontSize: '0.975rem',
+  textDecoration: "none",
+  fontWeight: 500,
+  alignItems: 'center',
+  ':hover': {
+    opacity: 0.8
   }
-`;
+});

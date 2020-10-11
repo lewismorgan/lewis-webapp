@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import styled from 'styled-components';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface BiographyProps {}
@@ -8,7 +7,7 @@ export interface BiographyProps {}
 export default class Biography extends React.Component<BiographyProps> {
   public render(): JSX.Element {
     return (
-      <Div>
+      <div>
         <p>
           Born in raised near St. Petersburg, Florida, I always found myself
           tinkering with technology more than playing in the sand (
@@ -39,11 +38,7 @@ export default class Biography extends React.Component<BiographyProps> {
           You'll probably find me in Cape Canaveral watching a rocket launch,
           Starbucks chatting with the baristas, or most likely Galaxy's Edge.
         </p>
-      </Div>
+      </div>
     );
   }
 }
-
-const Div = styled.div`
-  padding: 0 1rem 1rem 1rem;
-`;

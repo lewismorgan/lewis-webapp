@@ -4,7 +4,7 @@
  *
  */
 import React from 'react';
-import styled from 'styled-components/macro';
+import { styled } from 'stitches.config';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface AvatarProps {}
@@ -12,29 +12,22 @@ export interface AvatarProps {}
 export default class Avatar extends React.PureComponent<AvatarProps> {
   public render(): JSX.Element {
     return (
-      <Container>
+      <div style={{ display: 'flex'}}>
         <Circle>
-          <Eye>👁‍</Eye>
+          <span style={{fontSize: '3.5rem'}}>👁‍</span>
         </Circle>
-      </Container>
+      </div>
+
     );
   }
 }
 
-const Container = styled.div`
-  display: flex;
-`;
-
-const Circle = styled.span`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100%;
-  background-color: #3d3d3d;
-  width: 10rem;
-  height: 10rem;
-`;
-
-const Eye = styled.span`
-  font-size: 3.5rem;
-`;
+const Circle = styled('span', {
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  borderRadius: 100,
+  backgroundColor: '#3d3d3d',
+  width: '10rem',
+  height: '10rem',
+});
