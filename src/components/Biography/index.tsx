@@ -3,9 +3,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
-export interface IBiographyProps {}
+export interface BiographyProps {}
 
-export default class Biography extends React.Component<IBiographyProps> {
+export default class Biography extends React.Component<BiographyProps> {
   public render(): JSX.Element {
     return (
       <Div>

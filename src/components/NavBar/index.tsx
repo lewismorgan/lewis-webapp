@@ -2,10 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
-export interface INavBarProps {}
+export interface NavBarProps {}
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-export default function NavBar(props: INavBarProps): JSX.Element {
+export default function NavBar(props: NavBarProps): JSX.Element {
   return (
     <Wrapper>
       <Navigation>

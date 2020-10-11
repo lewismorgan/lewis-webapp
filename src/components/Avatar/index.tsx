@@ -7,9 +7,9 @@ import React from 'react';
 import styled from 'styled-components/macro';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
-export interface IAvatarProps {}
+export interface AvatarProps {}
 
-export default class Avatar extends React.PureComponent<IAvatarProps> {
+export default class Avatar extends React.PureComponent<AvatarProps> {
   public render(): JSX.Element {
     return (
       <Container>
