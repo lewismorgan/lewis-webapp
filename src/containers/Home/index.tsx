@@ -12,32 +12,15 @@ interface HomeProps {}
 const Home: React.FunctionComponent<HomeProps> = _props => {
   return (
     <>
-      <Wrapper id="/">
-        <Masthead />
-      </Wrapper>
+      <div style={{height: '100%'}}>
+        <span>TESTING</span>
+      </div>
     </>
   );
 };
 
 export default Home;
 
-const Button = styled('button', {
-  backgroundColor: 'gainsboro',
-  borderRadius: '9999px',
-  fontSize: '13px',
-  lineHeight: '1',
-  fontWeight: 500,
-  paddingTop: '10px',
-  paddingBottom: '10px',
-  paddingLeft: '16px',
-  paddingRight: '16px',
-  border: '0',
-});
+const Wrapper = styled('div', {
 
-const Wrapper = styled('main', {
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  justifyContent: 'center',
-  paddingTop: '1rem',
 });
