@@ -1,3 +1,5 @@
+/** Default Styling **/
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +7,79 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #0F0E08;
+}
+
+a {
+  color: white;
+}
+
+span {
+  color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.emoji {
+  font-size: 1.25rem;
+  padding: 0.1rem 0.5rem 0.1rem 0rem;
+}
+
+/** COMPONENTS **/
+
+/** Avatar **/
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  padding: 0.25rem;
+}
+
+.avCircle {
+  display: flex;
+  justify-content: center;
+  margin: 0.25rem;
+  align-items: center;
+  border-radius: 100px;
+  background-color: #3d3d3d;
+  width: 10rem;
+  height: 10rem;
+}
+
+.avCircle span {
+  font-size: 3.5rem;
+}
+
+/** Hero **/
+.hero {
+  display: flex;
+  flex-direction: row;
+  height: 75vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroItems {
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+
+.heroItems ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/** Mars **/
+
+.mars {
+  z-index: -100;
+  max-width: 450px;
 }

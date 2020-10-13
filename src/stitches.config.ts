@@ -6,3 +6,7 @@ export const { styled, css } = createStyled({
   breakpoints: {},
   utils: {},
 });
+
+export const Placeholder = styled('div', {
+  height: '500px',
+});

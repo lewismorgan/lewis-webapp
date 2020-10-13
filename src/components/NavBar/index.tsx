@@ -21,7 +21,6 @@ export default function NavBar(props: NavBarProps): JSX.Element {
 }
 
 const Wrapper = styled('header', {
-  boxShadow: '0 0.1rem black',
   height: '4rem',
   display: 'flex',
   top: 0,
@@ -39,10 +38,10 @@ const Item = styled('a', {
   color: 'white',
   padding: '0.25rem 1rem',
   fontSize: '0.975rem',
-  textDecoration: "none",
+  textDecoration: 'none',
   fontWeight: 500,
   alignItems: 'center',
   ':hover': {
-    opacity: 0.8
-  }
+    opacity: 0.8,
+  },
 });
