@@ -5,5 +5,10 @@
   ],
   "editor.codeActionsOnSave": {
     "source.fixAll": true
-  }
+  },
+  "stylelint.packageManager": "yarn",
+  "eslint.packageManager": "yarn",
+  "npm.packageManager": "yarn",
+  "tslint.packageManager": "yarn",
+  "prettier.packageManager": "yarn",
 }

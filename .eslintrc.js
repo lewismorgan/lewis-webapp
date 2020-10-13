@@ -20,6 +20,7 @@ module.exports = {
     ecmaVersion: 2021,
   },
   plugins: ['react', '@typescript-eslint', 'prettier'],
+  ignorePatterns: ['.eslintrc.js'],
   rules: {
     'prettier/prettier': 'error',
   },
