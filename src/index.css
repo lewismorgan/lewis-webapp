@@ -1,5 +1,10 @@
 /** Default Styling **/
 
+html {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -8,6 +13,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #0F0E08;
+  width: 100%;
+  height: 100%;
 }
 
 a {
@@ -57,18 +64,20 @@ code {
 .hero {
   display: flex;
   flex-direction: row;
-  height: 75vh;
+  height: 65vh;
   align-items: center;
   justify-content: center;
 }
 
-.heroItems {
+.hero-items {
   display: flex;
   flex-direction: column;
-  z-index: 100;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
 }
 
-.heroItems ul {
+.hero-items ul {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -77,9 +86,40 @@ code {
   padding: 0;
 }
 
+.hero-parallax {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 /** Mars **/
 
 .mars {
   z-index: -100;
   max-width: 450px;
+}
+
+.mars-parrallax {
+  transition: transform 1s;
+}
+
+/** Astronaut **/
+
+.astro {
+  max-width: 125px;
+  z-index: 10;
+  transform: scaleX(-1);
+}
+
+/** Stars **/
+#tsparticles {
+  display: block;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }

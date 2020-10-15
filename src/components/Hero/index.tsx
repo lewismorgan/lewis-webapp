@@ -2,6 +2,7 @@ import Avatar from 'components/Avatar';
 import * as React from 'react';
 import { Parallax, ParallaxBanner } from 'react-scroll-parallax';
 import marsgfx from './mars.svg';
+import astronaut from './astronaut.png';
 
 type HeroItem = {
   emoji: string;
@@ -34,17 +35,26 @@ export default class Hero extends React.Component<HeroProps> {
     });
 
     return (
-      <div>
+      <>
         <div className="hero">
-          <div className="heroItems">
+          <div className="hero-items">
             <Avatar />
             <ul>{bullets}</ul>
           </div>
         </div>
-        <Parallax y={[0, -100]}>
-          <img src={marsgfx} alt="mars" className="mars" />
-        </Parallax>
-      </div>
+        <div
+          className="hero-parallax"
+          style={{ display: 'flex', flexDirection: 'row' }}>
+          <Parallax y={[50, -100]}>
+            <img src={marsgfx} alt="mars" className="mars" />
+          </Parallax>
+          <Parallax
+            y={[25, -100]}
+            styleOuter={{ position: 'relative', right: '10%' }}>
+            <img src={astronaut} alt="astronaut" className="astro" />
+          </Parallax>
+        </div>
+      </>
     );
   }
 }
