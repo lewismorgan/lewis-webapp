@@ -9,9 +9,8 @@ export default function NavBar(props: NavBarProps): JSX.Element {
   return (
     <Wrapper>
       <Navigation>
+        {/* TODO: Insert a image instead */}
         <Item href="/">Home</Item>
-        <Item href="#biography">Biography</Item>
-        <Item href="#tech">Technologies</Item>
         <Item href="#projects">Projects</Item>
         <Item href="#resume">Resume</Item>
         <Item href="/contact">Contact</Item>
