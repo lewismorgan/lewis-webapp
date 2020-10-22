@@ -1,6 +1,6 @@
 import Avatar from 'components/Avatar';
 import * as React from 'react';
-import { Parallax, ParallaxBanner } from 'react-scroll-parallax';
+import { Parallax } from 'react-scroll-parallax';
 import marsgfx from './mars.svg';
 import astronaut from './astronaut.png';
 

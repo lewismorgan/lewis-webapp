@@ -1,5 +1,6 @@
 import Hero from 'components/Hero';
 import Stars from 'components/Stars';
+import Workplaces from 'components/Workplaces';
 import * as React from 'react';
 import { Placeholder } from 'stitches.config';
 
@@ -12,7 +13,8 @@ const Home: React.FunctionComponent<HomeProps> = _props => {
     <>
       <Stars />
       <Hero />
-      <Placeholder />
+      {/* <Placeholder /> */}
+      <Workplaces />
     </>
   );
 };

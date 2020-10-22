@@ -22,6 +22,7 @@ module.exports = {
   plugins: ['react', '@typescript-eslint', 'prettier'],
   ignorePatterns: ['.eslintrc.js'],
   rules: {
+    '@typescript-eslint/no-empty-interface': 'off',
     'prettier/prettier': 'error',
   },
   settings: {
