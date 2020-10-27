@@ -15,7 +15,6 @@ const Home: React.FunctionComponent<HomeProps> = _props => {
         <Button icon="fa-github" url="https://github.com/lewismorgan" />
       </div>
       <Hero />
-      <div className="footer" />
     </>
   );
 };

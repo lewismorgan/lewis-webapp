@@ -7,7 +7,6 @@ export function App(): JSX.Element {
   return (
     <ParallaxProvider>
       <BrowserRouter>
-        {/* <NavBar /> */}
         <Switch>
           <Route exact path="/" component={Home} />
         </Switch>

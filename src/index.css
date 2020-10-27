@@ -18,13 +18,9 @@ body {
   color: white;
 }
 
-/* a {
-  color: white;
+a {
+  color: white
 }
-
-span {
-  color: white;
-} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -120,37 +116,6 @@ code {
   transform: scaleX(-1);
 }
 
-/** Workplaces **/
-.workplaces {
-  display: flex;
-  flex-direction: column;
-  padding: 0 10% 10% 10%;
-  justify-content: space-between;
-}
-
-.workplace-card {
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
-  height: 250px;
-  margin: 5rem auto;
-  background-color: rgb(66, 61, 61);
-  border-radius: 8px;
-  width: 100%;
-}
-
-.wc-front {
- align-items: center;
- justify-content: center;
-}
-
-.wc-front h1 {
-  padding: 10px;
-}
-
-.wc-front span {
-  padding: .25rem;
-}
 /** Stars **/
 #tsparticles {
   display: block;
@@ -171,16 +136,12 @@ code {
   flex-direction: row;
   position: fixed;
   margin: .5rem;
+  padding: 5px;
   right: 1%;
-  /* height: 45px; */
 }
 
 .btn {
   font-size: 2.25rem;
-}
-
-.btn > a {
-  color: white;
 }
 
 .btn:hover {
