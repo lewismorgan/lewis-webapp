@@ -4,6 +4,8 @@
 
 A personal landing page written in TypeScript using the React framework
 
+TODO: Change location of Mars and the astronaut based on screen widths
+
 ## Available Scripts
 
 In the project directory, you can run:
