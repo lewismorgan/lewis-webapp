@@ -1,8 +1,7 @@
+import Button from 'components/Button';
 import Hero from 'components/Hero';
 import Stars from 'components/Stars';
-import Workplaces from 'components/Workplaces';
 import * as React from 'react';
-import { Placeholder } from 'stitches.config';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface HomeProps {}
@@ -12,9 +11,11 @@ const Home: React.FunctionComponent<HomeProps> = _props => {
   return (
     <>
       <Stars />
+      <div className="btn-bar">
+        <Button icon="fa-github" url="https://github.com/lewismorgan" />
+      </div>
       <Hero />
-      {/* <Placeholder /> */}
-      <Workplaces />
+      <div className="footer" />
     </>
   );
 };

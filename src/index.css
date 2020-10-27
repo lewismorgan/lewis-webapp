@@ -65,7 +65,7 @@ code {
 .hero {
   display: flex;
   flex-direction: row;
-  height: 65vh;
+  height: 75vh;
   align-items: center;
   justify-content: center;
 }
@@ -93,6 +93,12 @@ code {
   justify-content: space-between;
 }
 
+.footer {
+  display: flex;
+  flex-direction: row;
+  max-height: 100px;
+}
+
 /** Mars **/
 
 .mars {
@@ -108,6 +114,8 @@ code {
 
 .astro {
   max-width: 125px;
+  max-height: 6.69rem;
+  margin-right: 15%;
   z-index: 10;
   transform: scaleX(-1);
 }
@@ -155,3 +163,27 @@ code {
   top: 0;
   z-index: -1;
 }
+
+/** Button & Button Bar **/
+
+.btn-bar {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  margin: .5rem;
+  right: 1%;
+  /* height: 45px; */
+}
+
+.btn {
+  font-size: 2.25rem;
+}
+
+.btn > a {
+  color: white;
+}
+
+.btn:hover {
+  transform: scale(1.25, 1.25)
+}
+

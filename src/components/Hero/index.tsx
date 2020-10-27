@@ -45,14 +45,10 @@ export default class Hero extends React.Component<HeroProps> {
         <div
           className="hero-parallax"
           style={{ display: 'flex', flexDirection: 'row' }}>
-          <Parallax y={[50, -100]}>
+          <Parallax y={[50, -10]}>
             <img src={marsgfx} alt="mars" className="mars" />
           </Parallax>
-          <Parallax
-            y={[25, -100]}
-            styleOuter={{ position: 'relative', right: '10%' }}>
-            <img src={astronaut} alt="astronaut" className="astro" />
-          </Parallax>
+          <img src={astronaut} alt="astronaut" className="astro" />
         </div>
       </>
     );
