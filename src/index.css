@@ -103,13 +103,22 @@ code {
   position: absolute;
 }
 
-@media (min-width: 720px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (max-width: 600px) {
+  .mars {
+    width: 150px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) {
   .mars {
     width: 350px;
   }
 }
 
-@media (min-width: 1024px) {
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
   .mars {
     width: 450px;
   }
