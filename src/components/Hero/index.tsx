@@ -42,10 +42,8 @@ export default class Hero extends React.Component<HeroProps> {
             <ul>{bullets}</ul>
           </div>
         </div>
-        <div
-          className="hero-parallax"
-          style={{ display: 'flex', flexDirection: 'row' }}>
-          <Parallax y={[50, -10]}>
+        <div className="hero-parallax">
+          <Parallax className="mars-container" y={[10, -100]}>
             <img src={marsgfx} alt="mars" className="mars" />
           </Parallax>
           <img src={astronaut} alt="astronaut" className="astro" />
